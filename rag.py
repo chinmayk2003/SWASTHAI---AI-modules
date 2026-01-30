@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # Get your Perplexity API key from https://www.perplexity.ai/settings/api
-PERPLEXITY_API_KEY = "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"  # Replace with your actual key
+PERPLEXITY_API_KEY = "" 
 
 # 1. INITIALISE OUTSIDE THE LOOP (Crucial for speed)
 embedding_func = HuggingFaceEmbeddings(
@@ -81,3 +81,4 @@ while True:
     # prompt = generate_prompt(query=query, context=context)
     answer = generate_answer(query=query, context=context)
     print(f"\n{answer}\n")
+
