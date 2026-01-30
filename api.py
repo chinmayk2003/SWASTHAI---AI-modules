@@ -1,4 +1,4 @@
-GEMINI_API_KEY="AIzaSyCjSJPOj5sP8G77GGFLt-PccPHPxa5zTqg"
+GEMINI_API_KEY=""
 
 import os
 import signal
@@ -49,4 +49,5 @@ while True:
     context=get_relevant(query)
     prompt=generate_prompt(query=query,context=context)
     answer=generate_answer(prompt=prompt)
+
     print(answer)
